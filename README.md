@@ -67,4 +67,4 @@ Since this is a web page, it could easily have been run on something like Vercel
 
 # High Level Diagram
 
-![Diagram](./diagram.png)
+![Diagram](./high-level-diagram.png)
