@@ -1,0 +1,4 @@
+.bookingDate-calendar {
+  @apply shadow-sm rounded-xl bg-white;
+  width: 100%;
+}
