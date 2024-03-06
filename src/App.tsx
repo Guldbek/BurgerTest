@@ -24,7 +24,7 @@ function App() {
           {step === "Payment" && <PaymentStep />}
           {step === "Confirmation" && <ConfirmationStep />}
 
-          {step !== "Payment" && (
+          {step !== "Payment" && step !== "Confirmation" && (
             <div className="flex justify-between w-full">
               <button
                 className="bg-slate-200 px-7 py-2 rounded-xl"
