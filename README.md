@@ -1,7 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -39,8 +35,36 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## What is missing? / If i had more time
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. More labels for accessibility.
+2. More unit tests :(
+3. A validation handler for checking if the requirements for the "next" button is met, such as (Date selection, tickets..) - this can cause the Overview step to be blank.
+4. Would have added a cool background with "raining" spinning burgers
+5. More SVG icons for a better look and feel and easer UI recognition
+6. Forgot to implement a email field
+7. Would have loooooved to create a router history for the steps.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Considerations and reflections
+
+#### Security
+
+In general having time to implement some of OWASP input validation, would have been a very good idea, both for the user experience and security aspect
+
+#### User privacy
+
+I forgot to implement any user information fields, so GPDR wise it should be excellent! /s
+
+### Testing & Accessibility
+
+I've combined theese two topics, in the readme for a reason. If you decide to use `getByLabel` and avoid using `test-id` You will gain the benefit of accessbility while writing your tests, personally i love this philosophy! You can see an example of this at `tests/bookingFlow.spec.ts`
+
+I would have loved to prioritize more unit & e2e tests, but i decided to focus on trying to complete the flow, and spent what time i had left on tests.
+
+### Deployment
+
+Since this is a web page, it could easily have been run on something like Vercel.
+
+# High Level Diagram
+
+![Diagram](./diagram.png)
